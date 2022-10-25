@@ -1,0 +1,17 @@
+C:\Users\Will\source\repos\TestReview\TestReview\bin\Debug\net6.0-windows\TestReview.exe
+C:\Users\Will\source\repos\TestReview\TestReview\bin\Debug\net6.0-windows\TestReview.deps.json
+C:\Users\Will\source\repos\TestReview\TestReview\bin\Debug\net6.0-windows\TestReview.runtimeconfig.json
+C:\Users\Will\source\repos\TestReview\TestReview\bin\Debug\net6.0-windows\TestReview.dll
+C:\Users\Will\source\repos\TestReview\TestReview\bin\Debug\net6.0-windows\TestReview.pdb
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.csproj.AssemblyReference.cache
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.TestReview.resources
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.csproj.GenerateResource.cache
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.AssemblyInfoInputs.cache
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.AssemblyInfo.cs
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.csproj.CoreCompileInputs.cache
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.dll
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\refint\TestReview.dll
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.pdb
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\TestReview.genruntimeconfig.cache
+C:\Users\Will\source\repos\TestReview\TestReview\obj\Debug\net6.0-windows\ref\TestReview.dll

@@ -1,0 +1,13 @@
+﻿What does argument mean
+*The actual data assigned to the parameter
+What is initiation
+*code to set the loop variables to decribe the easiest subproblem ex) set count to 0
+What are overloaded methods
+*methods with the same name but different signatures (they do different tasks)What is an exception
+*Disruption in the normal flow of execution in a program
+What are some principles of testing
+*Testing should be repeatable, provide more than just pass/fail, focus on small units of code
+What is a stack trace
+*identifies the location of the error and the call chain
+What is topdown design
+*design strategy that decomposes a big problem into more manageable smaller ones

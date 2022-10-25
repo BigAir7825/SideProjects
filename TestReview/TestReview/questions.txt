@@ -1,0 +1,294 @@
+﻿What are the steps of an assignment statement
+*disconnect the variable from previous value, compute the other side, connect them
+List all of the diagrams they have discussed
+*plumbing, call graph, program state, control flow
+What does a variable hold when initially declared
+*null or closest thing to null
+What does a plumbing diagram do
+*visualive data dependencies
+How do assignment statements simplify complex statements
+*break the statement up to multiple lines
+How do you design conditionals
+*design the easy code, identify the hard code, design the hard code
+How many values can a comparison operator have
+*2 Boolean values
+What is an escape sequence
+*Identifies nonprinting character, specify a special character ex new line
+What are the 5 general setps when taking input and output
+*Input, Convert to value, Compute, Convert to string, Output
+What is a function
+* Mini program that solves a subproblem
+What are resons to use functions
+*not repeating code, improves nonfunctional dimensions, encapsulation to allow abstraction
+Difference between a parameter and an argument
+*parameter is in the function's signature, an argument is the value assigned to that parameter
+What is an exception
+*Signals a disruption of program's execution flow
+What is type casting
+*changing an expression's type
+What does the new operator do
+*allocates space for that object
+What are overloaded methods
+*methods with the same name but different signatures (they do different tasks)
+Differet Types of Errors
+*Syntax, Runtime, Logic, Build
+What is the most uncommon error
+*Build error, problem with the actual programming language, very uncommon
+What is an error that happens during execution
+*Runtime Errors
+What is an error with incorrect coding
+*Syntax error
+Is getting the wrong output an error
+*Yes, logic error
+Why is debugging hard
+*Symptom can be in different parts of code, fault are difficult to reproduce
+How do you isolate a fault
+*rubber ducking, use computational thinking, simplify inputs
+What is rubber ducking
+*Explaining the problem to someone/thing else
+If all tests pass is the program functionally correct
+*No, check for logic errors and uncovered code
+Name different types of testing
+*System testing, regresion testing, unit testing, integration testing, white-box, black-box, acceptance
+What is software testing at the systemic level
+*System testing
+What is testing to detect errors when changes are made
+*Regression testing
+What is testing at the individual, small scale
+*Unit testing
+What is testing of componenents or modules as a group
+*Integration Testing
+What is software testing using knowledge of the program
+*White box testing
+What is testing to determine if the client finds it acceptable
+*Acceptance testing
+What is software testing not using knowledge of how the program runs
+*Black box programming
+What is category partition testing
+*Black box, by diversifying test input, reducing test cases by using representative input, using information from specifications
+When are loops useful
+*The work is repetitive, the amount of work is not known
+What is code to set the result variables to the answer in the subproblem
+*base case
+What is code to set the loop variables to describe the subproblem
+*initiation
+What is a boolean expression that determines if there is work to do
+*termination condition
+What is code to update the result variable when moving from one subproblem to another
+*action
+Code to update the loop variables when moving from one subproblem to another
+*consecution
+What do loops do
+*Loops alow for repetition as necessary, and repeatedly executing code within following the DRY principle
+What are program state diagrams used for
+*showing the state of variable names and values at a given time
+What are some tricks with Program state diagrams
+*in conditionals keep going until you reach the code it says to stop at, start at main
+What do you do if a function returns a value
+*cross it out, if there is no return do not
+What do you do if a variable does not have a value yet/two values have the same value
+*[undefined] and just join the arrows
+What are the differences between unary, binary, and ternary comparisons
+*unary takes one argument, binary takes two, and ternary takes three
+What is topdown design
+*design strategy that decomposes a big problem into more manageable smaller ones
+What is refactoring
+*restructuring code without changing functionality
+What is a control flow graph CFG
+*Way of representing choices without showing details of the code, used for conditionals mostly
+How do you make a plumbing diagram from a decomposition diagram
+*first flip the diagram upside down, and replace the conditions with expressions, then use logical operators to join them
+How do you make a decompostion diagram
+*take the choice, and break down the choice into subchoices, and so on until no more choices
+What is a program decomposition diagram
+*Breaks down a choice into subchoices to find the result, usually used before making conditionals
+What is a plumbing diagram
+*shows the combinations of data to get the result, pick one value and go through the table to get the result
+What is a truth table
+*Shows the output of logical operators under input combinations
+What are some of the common relational operators
+*the AND, NOR, and OR are the most common relational operators written as && !|| and || respectively
+What is the order of preference of logical operators
+*The order is !, then &&, then ||
+What is an overloaded method
+*more than one intended function and use
+Why is the + in Java considered overloaded
+*Can concatenate and add values depending on context
+What is the difference between GUI and CLI
+*GUI uses more complex forms of entry while CLI just takes input from the command line
+What are the benefits of GUI
+*GUIs are easier for the user to understand and are much more interactive, much more familiar
+Are GUIs more interactive than CLIs
+*yes, CLIs do not allow the user to interact to the same degree as GUIs
+What are the benefits of CLIs
+*much easier for programmer, and much easier to test as linearity is common in CLIs
+Why do GUIs suffer with Testability
+*They have to deal with the user having multiple options, they can act on those options at any time
+Are GUIs or CLIs better with compatability
+*CLIs, because testing is hard with GUIs, they are not easily used with another program
+What are the steps of taking an int, computing with it and returning it to the user
+*Input the int, convert to an int value, compute, convert back to a string, output to user
+What is a stream
+*sequence of data and a marker to indicate progress made through the sequence
+What is an input stream
+*Holds input to the program, whether from user, file, or other program
+What are the predefined streams for input and output in java
+*System.in and System.out
+How do you take input from a GUI
+*use javas integrated showInputDialog() method
+What are the two methods showInputDialog() uses
+*what to center the dialogue box on top of, and the prompt to display, null just centers it
+What is encapsulation
+*The bundling of data and actions on data that hides details, only allowing access to essential info
+Why is encapsulation important
+*Helps with abstraction, don't worry about nonimportant details, also a bit more secure
+What is seperation of concerns
+*Design principle for seperating software functionality into modules & methods
+What is method extraction
+*taking code outside of one method and moving it to a self contained one to return the value
+Why use seperate methods
+*follows DRY principle, cleans up code, abstraction & encapsulation
+What does the computer do during a function call
+*Evaluate args, use new context and add parameters, bind parameters to arguments, run code, replace with result if applicabke
+What does parameter mean
+*Variable name in the functions signature
+What does argument mean
+*The actual data assigned to the parameter
+What is a call graph
+*Shows the hierarchy of functions called/being called
+What is an interprocedural control flow graph
+*CFG over multiple methods, showing method calls and returns to the main method
+What is an exception
+*Disruption in the normal flow of execution in a program
+What happens when an exception is thrown
+*runtime system looks to handle it using an exception handler
+What are the purpose of exceptions
+*allow us to see what the code does versus what it does when something unexpected happens
+What is type casting
+*a way to change or specify the type of something using a cast operator ex) Object myObject
+What are local variables
+*arguments and data declared by a method
+What are fields
+*variables declared in a class NOT a method, available to all methods of a class
+Are fields declared in a class or a method
+*Declared in a class NOT a method, available to methods
+What are access-level modifiers
+*Keywords that dictate the privacy of the method/class
+What is a private access level modifier
+*Specifies that external access is disallowed
+What is a public access level modifier
+*specifies that external access is allowed
+What does a final keyword do
+*makes a field immutable (can't be changed)
+What is the difference between mutable and immutable
+*mutable can be changed immutable cannot be changed
+What is a convenience or helper method
+*non essential that provides functionality to other methods, used to ease tasks
+What are overloaded methods
+*Two methods in the same class that have the same name, have to have different signatures
+What does the new keyword do
+*allocates memory to a new object
+What is an enumerated type
+*specifies a fixed list of possible values that type can have
+How do you create an enumerated type
+*Use the enum type followed by the name of the enumerated type, followed by list of allowed values
+What is an example of a unary operator
+*The ! is unary
+What is an example of a binary operator
+*The + is binary, most of all operators are binary
+What is an example of a ternary operator
+*very uncommon, there is the if-then-else operator that uses ?, first is condition, and the second and third are values
+What is a fault
+*condition which causes software to fail at the specified behavior, also known as bug
+What is the difference between an exception and a fault
+*exception is the error, fault is the location of the error
+Is the location of the bug identified by the compiler
+*most of the time it is, but not always
+What is a stack trace
+*identifies the location of the error and the call chain
+What is fault localization and why does debugging runtime errors use it
+*Finding the area where the code failed at, used because the place may not be known at that point
+What are classpath errors
+*same thing as build errors, the tools are incorrect
+What are reasons that debugging is hard
+*software system are big, bugs are hard to reproduce, the fault might be in a different location, the fault might not be in the code
+What is the RIRV method of debugging
+*Reproduce the failur, Isolate the fault, Remove the fault, Verify the fix
+How do you reproduce a failure
+*Find the inputs that cause the failure, could be compiler or by using inputs
+How do you isolate the fault
+*Identify assumptions, simplify inputs, choosing debugging strategy, choose a starting point, apply computational thinking & rubber ducking
+How do you remove a fault
+*Change the code so it behaves correctlym need to be careful so as not to introduce regression bugs
+How do you verify the fault has been fixed
+*Make sure that the input works, and make sure no other input errors were introduced
+What are the debugging strategies
+*tracing, logging, interactive debugging
+How does logging work
+*Print important values to check their values, often adding outputs then removing them later
+How does tracing work
+*Reading the code in the order that the statements execute, usefull for small faults
+How does interactive debugging work
+*uses a tool to control execution and variable values, setting breakpoints and skipping code
+What is software testing
+*assessment of the software to determine quality level and conformance to requirements
+What is a test case
+*inputs, actions, and expected results to check if the software meets requirements
+What is a test oracle
+*The expectations about the code output given specific inputs
+What is a test suite
+*collection of test cases, usually tells user how many pass/fail
+What is the purpose of functional testing
+*checking to make sure if the program follows the cients written expectations
+How is functional testing limited
+*Doesn't test for nonfunctional factors that are important ex) usability, scalability
+What is dependability testing
+*testing to make sure the program is consistent NOT necessarily right
+What is unit testing
+*Focused on testing the small units of code seperately
+What is system testing
+*Tests the entire system
+What is integration testing
+*Testing for problems when certain units combine
+What is a common list of testing in order
+*unit, integration, regression, acceptance
+What is the difference between white and block box testing
+*Using or not using the internal knowledge of the code
+What are some principles of testing
+*Testing should be repeatable, provide more than just pass/fail, focus on small units of code
+What is a testing framework we have used
+*JUnit
+What specifies a good test
+*lots of different things, checking against expected results is a good one though
+What is SUT
+*Software Under Test, used with Black-Box testing
+What is a well known version of blackbox testing
+*Category partition testing
+What does category partition testing do
+*uses information in specification to select input values, diversifying based on catefories
+What would be some common test cases for category partition testing
+*Max value of a list element, element type, values outside of expected
+What are shorthanded assignments
+*simpler way of programming that does the same thing but uses less characters ex) x++
+What is the differences between prefix and postfix operators
+*relating to ++, if before it adds before any operation, if after it adds after any operation
+What do loops help do
+*Follows DRY principle by implementing a way to repeat code mutliple times, good if we do not know the number of iterations
+What are the two types of variable that loops use
+*Result variables and loop variables
+What is the difference between result and loop variables
+*Result solves the problem, loop represent the points of variation ex) a counter
+What are the 5 parts to a loop
+*base case initiation, termination condition, an action, and a consecution
+What is the base case
+*code to set the result variables to answer the easiest subproblem ex) set result to 0
+What is initiation
+*code to set the loop variables to decribe the easiest subproblem ex) set count to 0
+What is the termination condition
+*boolean expression to decide whether to continue ex) count > N
+What is an action in loops
+*code to update the result variable when moving between problems ex) result += f(count)
+What is the consecution
+*Code to update the loop variables when moving between subproblems ex) count++
+What is the difference between while, do-whilem, and for loops
+*do & while loops check conditions mainly, for check numbers mainly, while and for are precheck, do is postcheck

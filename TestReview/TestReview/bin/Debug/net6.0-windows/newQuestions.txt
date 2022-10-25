@@ -1,0 +1,2 @@
+What is the consecution
+*Code to update the loop variables when moving between subproblems ex) count++
