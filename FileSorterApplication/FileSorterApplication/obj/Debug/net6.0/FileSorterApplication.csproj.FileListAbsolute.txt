@@ -1,0 +1,15 @@
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\bin\Debug\net6.0\FileSorterApplication.exe
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\bin\Debug\net6.0\FileSorterApplication.deps.json
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\bin\Debug\net6.0\FileSorterApplication.runtimeconfig.json
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\bin\Debug\net6.0\FileSorterApplication.dll
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\bin\Debug\net6.0\FileSorterApplication.pdb
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.csproj.AssemblyReference.cache
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.AssemblyInfoInputs.cache
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.AssemblyInfo.cs
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.csproj.CoreCompileInputs.cache
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.dll
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\refint\FileSorterApplication.dll
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.pdb
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\FileSorterApplication.genruntimeconfig.cache
+C:\Users\willh\source\repos\FileSorterApplication\FileSorterApplication\obj\Debug\net6.0\ref\FileSorterApplication.dll
