@@ -12,9 +12,13 @@ If it is not the first time, the program will save the filepaths, then look for 
 name, it will prompt the user to enter a descriptive name and then organize the file afterwards
 
 Order:
-Main object: College, has 4 subobjects of type year representing years of college, each year has 3 objects of type Semester representing
-Fall, Spring, and Summer. These each have 3 FocusAreas representing classes, internship and jobs, and miscellaneous. Depending on the type
-of focus area, it will have subfolders representing a Subject (or class), which will have a Section if applicable, these are where the files are stored
+One main object of class College, represents the overarching college
+A variable amount of objects of class Year, represents the year in college
+A variable amount of objects of class Semester, represents the semester in a year in college
+A variable amount of objects of class FocusArea, represents what the data is focused on (i.e. classwork or miscellaneous)
+A variable amount of objects of class Subject, represents the subject of the data contained within a FocusArea (i.e. a course or internship)
+A variable amount of objects of class Section, represents the section of data contained within a Subject (i.e. a lecture and lab)
+A variable amount of objects of class File, represents the individual file, this is the lowest level of class
 
 User Responsibilities: 
 User must create a file system in the convention outlined above, they also must ensure that they follow a naming scheme in naming folders.

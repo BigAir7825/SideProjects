@@ -8,5 +8,9 @@ namespace FileSorterApplication
 {
     internal class College
     {
+        public College()
+        {
+
+        }
     }
 }
