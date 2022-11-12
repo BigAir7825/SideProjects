@@ -16,12 +16,22 @@ namespace FileSorterApplication
             toPrint = new Dictionary<string, string>();
             Console.WriteLine("This is the initial setup: READ ALL QUESTIONS CAREFULLY\n\n");
             string userNameFilePath = makeValidFilePath(fileStub, getInput("Enter the User name of the windows user (i.e. C:\\Users\\{userName}): "));
-            toPrint.Add(userNameFilePath, "USERNAME");
-            getCollegeInfo(userNameFilePath);
+            string locationFilePath = makeValidFilePath(userNameFilePath, getInput("Enter the location for the folder (i.e. OneDrive, Desktop): "));
+            toPrint.Add(locationFilePath, "USERNAME");
+            getCollegeInfo(locationFilePath);
             foreach (var index in toPrint)
-                write("paths.txt", $"{index.Value} - {index.Key}", true);
-            Console.WriteLine("Initial Setup complete, returning to main program");
-            write("setUp.txt", "COMPLETE", false);
+                write("paths.txt", $"{index.Value} - {index.Key}\n", true);
+            makeDirectory();
+            Console.WriteLine("Directory has been written, enter y if you are content with this, otherwise delete and restart");
+            if (Console.ReadLine() == "y")
+            {
+                Console.WriteLine("Initial Setup complete, returning to main program");
+                write("setUp.txt", "COMPLETE", false);
+            } else
+            {
+                Console.WriteLine("Sorry about that");
+                System.Environment.Exit(1);
+            }
         }
         public string getInput(string output) 
         {
@@ -54,7 +64,7 @@ namespace FileSorterApplication
         }
         public void getSemesterInfo(string yearFilePath, int yearSemester, int collegeYear)
         {
-            string semesterPath = makeValidFilePath(yearFilePath, getInput($"Enter the name for semester {yearSemester} of {collegeYear}: "));
+            string semesterPath = makeValidFilePath(yearFilePath, getInput($"Enter the name for semester {yearSemester} of year {collegeYear}: "));
             toPrint.Add(semesterPath, "SEMESTER");
             int numberOfFocusAreas = Convert.ToInt32(getInput($"Enter the number of focus areas for year {collegeYear}, semester {yearSemester} (i.e. classes & internship): "));
             for (int semesterFocus = 1; semesterFocus <= numberOfFocusAreas; semesterFocus++)
@@ -72,7 +82,7 @@ namespace FileSorterApplication
         {
             string subjectPath = makeValidFilePath(focusAreaFilePath, getInput($"Enter the name for subject {subjectFocus} of focus area {semesterFocus} of semester {yearSemester} of year {collegeYear}: "));
             toPrint.Add(subjectPath, "SUBJECT");
-            int numberOfSections = Convert.ToInt32(getInput($"Enter the number of sections in subjects for year {collegeYear}, semester {yearSemester}, focus area {semesterFocus} (i.e. number of lab/lectures): "));
+            int numberOfSections = Convert.ToInt32(getInput($"Enter the number of sections in subject {subjectFocus} for year {collegeYear}, semester {yearSemester}, focus area {semesterFocus} (i.e. number of lab/lectures): "));
             for (int sectionSubject = 1; sectionSubject <= numberOfSections; sectionSubject++)
                 getSectionInfo(subjectPath, sectionSubject, subjectFocus, semesterFocus, yearSemester, collegeYear);
         }
@@ -80,6 +90,14 @@ namespace FileSorterApplication
         {
             string sectionPath = makeValidFilePath(subjectFilePath, getInput($"Enter the name for section {sectionSubject} of subject {subjectFocus} of focus area {semesterFocus} of semester {yearSemester} of year {collegeYear}: "));
             toPrint.Add(sectionPath, "SECTION");
+        }
+        public void makeDirectory()
+        {
+            foreach (var index in toPrint)
+            {
+                if (!Directory.Exists(index.Key))
+                    Directory.CreateDirectory(index.Key);
+            }
         }
     }
 }

@@ -11,14 +11,18 @@ namespace FileSorterApplication
         public Startup()
         {
             ReadFromFile reader = new ReadFromFile("setUp.txt");
-            if (reader.isValid)
-            {
-                //TODO: implement running program
-            } else
-            {
-                InitialSetup setup = new InitialSetup();
-                //TODO: implement running program
-            }
+            InitialSetup setup;
+            if (!reader.isValid)
+                setup = new InitialSetup();
+        }
+        public void createObjects()
+        {
+
+        }
+        public List<string> read(string filePath)
+        {
+            ReadFromFile reader = new ReadFromFile(filePath);
+            return reader.lines;
         }
     }
 }
