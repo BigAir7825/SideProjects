@@ -8,8 +8,5 @@ namespace FileSorterApplication
 {
     internal class Semester
     {
-        private FocusArea classWork;
-        private FocusArea internship;
-        private FocusArea miscellaneous;
     }
 }

@@ -1,2 +1,1 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Checking status");
+﻿Console.WriteLine("Checking startup status");

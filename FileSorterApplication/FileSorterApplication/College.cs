@@ -8,9 +8,5 @@ namespace FileSorterApplication
 {
     internal class College
     {
-        private Year freshman;
-        private Year sophomore;
-        private Year junior;
-        private Year senior;
     }
 }

@@ -8,53 +8,23 @@ namespace FileSorterApplication
 {
     internal class InitialSetup
     {
-        public string userName;
-        Dictionary<string, string> paths;
-        public InitialSetup(string condition)
+        public bool isSetUp;
+        public Dictionary<string, string> paths;
+        public InitialSetup()
         {
-            switch (condition)
-            {
-                case "error":
-                    FromError();
-                    break;
-                case "normal":
-                    NormalOperations();
-                    break;
-            }
-
-        }
-        public void FromError()
-        {
-            Console.Write("Initial setup incomplete\nEnter the user name for the account (i.e. C\\Users\\{Username}): ");
-            userName = Console.ReadLine();
-        }
-        public void NormalOperations()
-        {
+            ReadFromFile initialRead = new ReadFromFile("setUp.txt");
             paths = new Dictionary<string, string>();
-            FileWork fileWork = new FileWork("read", "paths.txt", "");
-            foreach (string line in fileWork.rawData)
+            if (!initialRead.isValid)
             {
-                string[] splitLine = line.Split(" - ");
-                switch (splitLine[0])
-                {
-                    case "College":
-                        break;
-                    case "1) Freshman":
-                        break;
-                    case "2) Sophomore":
-                        break;
-                    case "3) Junior":
-                        break;
-                    case "4) Senior":
-                        break;
-                    case "1) Fall":
-                        break;
-                    case "2) Spring":
-                        break;
-                    case "3) Summer":
-                        break;
-                }
+                write("setUp.txt", "SetUP - Valid", false);
+                Console.WriteLine("This is the initial setup of this program");
+                Console.WriteLine("To start, please enter the name of the user of this program (i.e. C:\\{userName}: ");
+                paths.Add("UserName", "");
             }
+        }
+        public void write(string filePath, string text, bool overWrite)
+        {
+
         }
     }
 }
