@@ -1,0 +1,26 @@
+USERNAME - C:\Users\willh\Desktop
+COLLEGE - C:\Users\willh\Desktop\College
+YEAR - C:\Users\willh\Desktop\College\1) Freshman
+SEMESTER - C:\Users\willh\Desktop\College\1) Freshman\1) Fall
+FOCUSAREA - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\CSCE 10
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\UHON 101H
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\MATH 106
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\MATH 106\Lecture
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\MATH 106\Recitation
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\SOFT 160
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\SOFT 160\Lab
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\SOFT 160\Lecture
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\GEOG 155
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\GEOG 155\Lab
+SECTION - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\GEOG 155\Lecture
+SUBJECT - C:\Users\willh\Desktop\College\1) Freshman\1) Fall\1) Classwork\POLS 189H
+FOCUSAREA - C:\Users\Desktop\willh\College\1) Freshman\1) Fall\2) Internships
+SUBJECT - C:\Users\Desktop\willh\College\1) Freshman\1) Fall\2) Internships\Sandhills
+SUBJECT - C:\Users\Desktop\willh\College\1) Freshman\1) Fall\2) Internships\Other
+FOCUSAREA - C:\Users\Desktop\willh\College\1) Freshman\1) Fall\Misc
+SEMESTER - C:\Users\Desktop\willh\College\1) Freshman\2) Spring
+SEMESTER - C:\Users\Desktop\willh\College\1) Freshman\3) Summer
+YEAR - C:\Users\Desktop\willh\College\2) Sophomore
+YEAR - C:\Users\Desktop\willh\College\3) Junior
+YEAR - C:\Users\Desktop\willh\College\4) Senior
