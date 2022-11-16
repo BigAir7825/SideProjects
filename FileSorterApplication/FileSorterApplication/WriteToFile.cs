@@ -17,14 +17,14 @@ namespace FileSorterApplication
             this.textToWrite = textToWrite;
             try
             {
-                if (overWrite)
+                if (!overWrite)
                 {
-                    StreamWriter sw = new StreamWriter(filePath, true);
+                    StreamWriter sw = new StreamWriter(filePath);
                     sw.Write(textToWrite);
                     sw.Close();
                 } else
                 {
-                    StreamWriter sw = new StreamWriter(filePath);
+                    StreamWriter sw = new StreamWriter(filePath, true);
                     sw.Write(textToWrite);
                     sw.Close();
                 }
