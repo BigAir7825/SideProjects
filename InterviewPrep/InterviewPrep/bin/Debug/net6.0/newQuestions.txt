@@ -1,0 +1,46 @@
+
+What’s the difference between tables and views
+Describe a time you disagreed with a manager
+What do you see yourself doing in 5, 10 years
+Describe the functionality of a queue and a stack
+What is a DLL
+What is the difference between Front end or back end
+What is MVC (Model View Controller)
+Who is your favorite boss till date and why
+Experience with different projects
+Name some IDEs you are currently using
+Explain the difference between client side and server side
+What languages have I used and are comfortable
+What did you dislike about your previous job
+What would your previous manager say is your biggest weakness
+What are your goals
+Why would you be interested in working with us
+What is your favorite course, teacher
+Why did you choose UNL
+Biggest strength
+Projects & interests
+Why the position
+How confident are you with [programming language]
+Have you ever missed a deadline before
+What did you like most about your old job
+If given an opportunity what would you change in a Software Developer
+What is an IDE
+What is an API
+Mutable vs Immutable
+What is a garbage collector?
+What is short-circuit evaluation
+What is a hash
+Overlapping subproblems
+What is a data structure
+What is an array
+What is a Linked List
+Orders (FIFO v LIFO)
+What is recursion
+OOP Concepts
+Best sorting algorithm
+What are dynamic data structures
+How to find a palindrome in Java/other languages
+How to find if words are anagrams
+What is multithreading in an Operating System? 
+What's your ideal company?
+What do you like to do?
