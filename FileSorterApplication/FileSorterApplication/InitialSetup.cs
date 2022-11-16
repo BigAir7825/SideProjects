@@ -22,16 +22,10 @@ namespace FileSorterApplication
             foreach (var index in toPrint)
                 write("paths.txt", $"{index.Value} - {index.Key}\n", true);
             makeDirectory();
-            Console.WriteLine("Directory has been written, enter y if you are content with this, otherwise delete and restart");
-            if (Console.ReadLine() == "y")
-            {
-                Console.WriteLine("Initial Setup complete, returning to main program");
-                write("setUp.txt", "COMPLETE", false);
-            } else
-            {
-                Console.WriteLine("Sorry about that");
-                System.Environment.Exit(1);
-            }
+            string dumpFilePath = makeValidFilePath($"{locationFilePath}", getInput("Enter the name of the dump folder (chould be next to college): "));
+            if (!Directory.Exists(dumpFilePath))
+                Directory.CreateDirectory(dumpFilePath);
+            write("dump.txt", dumpFilePath, false);
         }
         public string getInput(string output) 
         {

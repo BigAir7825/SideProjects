@@ -9,8 +9,7 @@ namespace FileSorterApplication
 {
     internal class Startup
     {
-        private Dictionary<string, string> filePaths;
-        private College initializedCollege;
+        public Dictionary<string, string> filePaths;
         public Startup()
         {
             filePaths = new Dictionary<string, string>();
@@ -18,13 +17,11 @@ namespace FileSorterApplication
             InitialSetup setup;
             if (!reader.isValid)
                 setup = new InitialSetup();
-            createObjects();
-            Console.WriteLine("Successfully put everything into sorting objects");
+            createDictionary();
         }
-        public void createObjects()
+        public void createDictionary()
         {
             read("paths.txt");
-            initializedCollege = new College(filePaths);
         }
         public void read(string filePath)
         {
