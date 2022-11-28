@@ -31,7 +31,7 @@ namespace FileSorterApplication
             } catch (Exception e)
             {
                 Console.WriteLine("File path not set up");
-                InitialSetup setupApplication = new InitialSetup("error");
+                InitialSetup setupApplication = new InitialSetup();
             }
         }
         public void WriteToFile(string filePath, string textToWrite)

@@ -1,7 +1,0 @@
-USERNAME - C:\Users\willh\Documents
-COLLEGE - C:\Users\willh\Documents\A
-YEAR - C:\Users\willh\Documents\A\B
-SEMESTER - C:\Users\willh\Documents\A\B\C
-FOCUSAREA - C:\Users\willh\Documents\A\B\C\D
-SUBJECT - C:\Users\willh\Documents\A\B\C\D\F
-SECTION - C:\Users\willh\Documents\A\B\C\D\F\G
