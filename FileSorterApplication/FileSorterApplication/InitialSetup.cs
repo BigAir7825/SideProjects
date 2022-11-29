@@ -16,7 +16,6 @@ namespace FileSorterApplication
         private KeyValuePair<string, string> semester;
         private KeyValuePair<string, string> focusArea;
         private KeyValuePair<string, string> subject;
-        private KeyValuePair<string, string> section;
         public InitialSetup()
         {
             Console.WriteLine("This is the initial setup: READ ALL QUESTIONS CAREFULLY\n\n");
@@ -92,7 +91,7 @@ namespace FileSorterApplication
         }
         public void getSemesterInfo(int semesterNumber)
         {
-            string semesterName = getInput($"Give a name for semester {semesterNumber} of year {year.Key}: ");
+            string semesterName = getInput($"Give a name for year {year.Key}, semester {semesterNumber}: ");
             string semesterPath = makeToPath(year.Value, semesterName);
             semester = new KeyValuePair<string, string>(semesterName, semesterPath);
             filePathsAndPurpose.Add(semesterPath, "SEMESTER");
@@ -100,26 +99,29 @@ namespace FileSorterApplication
             for (int focusAreaNumber = 1; focusAreaNumber <= numberOfFocusAreas; focusAreaNumber++)
                 getFocusAreaInfo(focusAreaNumber);
         }
-        public void getFocusAreaInfo(string semesterFilePath, int semesterFocus, int yearSemester, int collegeYear)
+        public void getFocusAreaInfo(int focusAreaNumber)
         {
-            st
-            string focusAreaPath = makeToPath(semesterFilePath, getInput($"Enter the name for focus area {semesterFocus} of semester {yearSemester} of year {collegeYear}: "));
+            string focusAreaName = getInput($"Give a name for year {year.Key}, semester {semester.Key}, focus area {focusAreaNumber}: ");
+            string focusAreaPath = makeToPath(semester.Value, focusAreaName);
+            focusArea = new KeyValuePair<string, string>(focusAreaName, focusAreaPath);
             filePathsAndPurpose.Add(focusAreaPath, "FOCUSAREA");
-            int numberOfSubjects = Convert.ToInt32(getInput($"Enter the number of subjects in focus areas for year {collegeYear}, semester {yearSemester}, focus area {semesterFocus} (i.e. number of classes): "));
+            int numberOfSubjects = Convert.ToInt32(getInput($"Enter the number of subjects in focus areas for year {year.Key}, semester {semester.Key}, focus area {focusAreaName} (i.e. number of classes): "));
             for (int subjectFocus = 1; subjectFocus <= numberOfSubjects; subjectFocus++)
-                getSubjectInfo(focusAreaPath, subjectFocus, semesterFocus, yearSemester, collegeYear);
+                getSubjectInfo(numberOfSubjects);
         }
-        public void getSubjectInfo(string focusAreaFilePath, int subjectFocus, int semesterFocus, int yearSemester, int collegeYear)
+        public void getSubjectInfo(int subjectNumber)
         {
-            string subjectPath = makeToPath(focusAreaFilePath, getInput($"Enter the name for subject {subjectFocus} of focus area {semesterFocus} of semester {yearSemester} of year {collegeYear}: "));
+            string subjectName = getInput($"Give a name for year {year.Key}, semester {semester.Key}, focus area {focusArea.Key}, subject {subjectNumber}: ");
+            string subjectPath = makeToPath(focusArea.Value, subjectName);
+            subject = new KeyValuePair<string, string>(subjectName, subjectPath);
             filePathsAndPurpose.Add(subjectPath, "SUBJECT");
-            int numberOfSections = Convert.ToInt32(getInput($"Enter the number of sections in subjects for year {collegeYear}, semester {yearSemester}, focus area {semesterFocus} (i.e. number of lab/lectures): "));
+            int numberOfSections = Convert.ToInt32(getInput($"Enter the number of sections for year {year.Key}, semester {semester.Key}, focus area {focusArea.Key}, subject {subjectName} (i.e labs/lectures): "));
             for (int sectionSubject = 1; sectionSubject <= numberOfSections; sectionSubject++)
-                getSectionInfo(subjectPath, sectionSubject, subjectFocus, semesterFocus, yearSemester, collegeYear);
+                getSectionInfo(numberOfSections);
         }
-        public void getSectionInfo(string subjectFilePath, int sectionSubject, int subjectFocus, int semesterFocus, int yearSemester, int collegeYear)
+        public void getSectionInfo(int sectionNumber)
         {
-            string sectionPath = makeToPath(subjectFilePath, getInput($"Enter the name for section {sectionSubject} of subject {subjectFocus} of focus area {semesterFocus} of semester {yearSemester} of year {collegeYear}: "));
+            string sectionPath = makeToPath(subjectFilePath, getInput($"Give a name for year {year.Key}m semester {semester.Key}, focus area {focusArea.Key}, subject {subject.Key}, section {sectionNumber}"));
             filePathsAndPurpose.Add(sectionPath, "SECTION");
         }
         public void makeDirectory()
